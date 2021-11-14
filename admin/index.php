@@ -24,9 +24,30 @@
             <!-- Main Content Section Starts -->
             <div class ="main-contant">
                 <div class="wrapper">
-                Main 
+               <h1> DashBoard</h1>
 
-                </div>
+               <div class="col-4 text-center" > 
+                <h1>5</h1>
+                <br/>
+                    Categories               </div>
+                
+                <div class="col-4 text-center" > 
+                <h1>5</h1>
+                <br/>
+                    Categories               </div>
+                
+                <div class="col-4 text-center" > 
+                <h1>5</h1>
+                <br/>
+                    Categories               </div>
+                
+                <div class="col-4 text-center" > 
+                <h1>5</h1>
+                <br/>
+                    Categories               </div>
+                
+                <div class="clearfix"></div>
+            </div>
             </div>
             <!-- main Content Secton End -->
             <!-- Footer section starts -->

@@ -22,6 +22,12 @@ font-family:Arial,Helvetica,sans-serif;
     text-align:center;
 }
 
+.clearfix{
+
+    float:none;
+    clear:both;
+}
+
 /* Manu Selection  */
 
 .menu{
@@ -52,9 +58,20 @@ font-family:Arial,Helvetica,sans-serif;
 
 /*  css for main-contant*/
 .main-contant{
-    margin:1% 0;
+    
     background-color: #a4b0be;
 }
+
+.col-4{
+    width:20%;
+    background-color: white;
+    margin:1%;
+    padding:2%;
+    float:left;
+}
+
+
+
 
 /*CSS For Footer*/
 .footer{
