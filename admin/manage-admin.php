@@ -6,8 +6,13 @@
                 <div class="wrapper">
                <h1> Manage Admin</h1>
 
-                <!-- button -->
+                <br>
+                <!-- button admin-->
                 <a href="#" class="btn-primary">Add Admin</a>
+
+                <br />
+                <br />
+                <br/>
 
                <table class ="tbl-full">
 
@@ -24,8 +29,8 @@
                             <td>nithyannd</td>
                             <td>nithy</td>
                             <td>
-                                update admin
-                                delete admin
+                            <a href="#" class="btn-secondary">update Admin</a>
+                            <a href="#" class="btn-danger">Delete Admin</a>
                             </td>
 
                         </tr>
@@ -34,8 +39,8 @@
                             <td>nithyannd</td>
                             <td>nithy</td>
                             <td>
-                                update admin
-                                delete admin
+                            <a href="#" class="btn-secondary">update Admin</a>
+                            <a href="#" class="btn-danger">Delete Admin</a>
                             </td>
 
                         </tr>
@@ -44,8 +49,8 @@
                             <td>nithyannd</td>
                             <td>nithy</td>
                             <td>
-                                update admin
-                                delete admin
+                            <a href="#" class="btn-secondary">update Admin</a>
+                            <a href="#" class="btn-danger">Delete Admin</a>
                             </td>
 
                         </tr>
