@@ -69,14 +69,16 @@
                 $sql = "INSERT INTO tbl_admin SET
                         full_name='$full_name',
                         username='$username',
-                        password='$password'";
+                        password='$password'
+                        ";
 
                 // 3. excute database and save the date 
-                    $conn =mysqli_connect('localhost','root','') or die(mqsqli_error()); // data base connection 
-                    $db_select =mysqli_select_db($conn,'food-order-project') or die (mysqli_error()); // selecting the database 
+                 
+                // excuting he query into the data base
+                $res = mysqli_query($conn, $sql) or die(mysqli_error());
 
-                   // $res =mysqli_query( $conn, $sql) or die (mysqli_error());
-        
+
+            
             }
         
 ?>
