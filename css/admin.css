@@ -56,6 +56,26 @@ font-family:Arial,Helvetica,sans-serif;
 
 }
 
+.tbl-full{
+    width: 100%;
+}
+table tr th{
+border-bottom: 1px solid black;
+padding: 1px;
+text-align: left;
+
+}
+
+table tr td{
+    padding: 1%;
+
+}
+
+.btn-primary{
+    background-color: #3742fa;
+}
+
+
 /*  css for main-contant*/
 .main-contant{
     
