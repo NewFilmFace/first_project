@@ -55,6 +55,8 @@ font-family:Arial,Helvetica,sans-serif;
     color:#3742fa;
 
 }
+/* Table CSS */
+
 
 .tbl-full{
     width: 100%;
@@ -69,6 +71,10 @@ text-align: left;
 table tr td{
     padding: 1%;
 
+}
+
+.tbl-30{
+    width: 30%;
 }
 
 /* Button  */
