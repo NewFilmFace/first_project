@@ -5,6 +5,8 @@
      <div class="wrapper">
         <h1>Add Admin</h1>
 
+<br>
+
         <form action="" method="POST">
 
         <table class="tbl-30">
@@ -28,6 +30,12 @@
                         
 
                     </tr>
+                        
+                    <tr> 
+                    <br/><br/>
+                        <td colspan="2" ><input type="submit" name="submit" value="Add Admin" class="btn-secondary"></td>
+
+                    </tr>
 
         </table>
 
@@ -42,3 +50,33 @@
 
 
 <?php include('partials/footer.php'); ?>
+<?php 
+    /*  Form save it to data */
+    /*  Check the submit buton is click or not */
+
+        if(isset($_POST['submit']))
+        {
+            // button clicked  
+           // echo "Button clicked";  
+        
+            //1.get the data from form 
+                $full_name = $_POST['full_name'];
+                $username = $_POST['username'];
+                $password = md5($_POST['password']); //password is maked MD5
+        
+                //2. SQL Qeury Data save into the data base
+
+                $sql = "INSERT INTO tbl_admin SET
+                        full_name='$full_name',
+                        username='$username',
+                        password='$password'";
+
+                // 3. excute database and save the date 
+                    $conn =mysqli_connect('localhost','root','') or die(mqsqli_error()); // data base connection 
+                    $db_select =mysqli_select_db($conn,'food-order-project') or die (mysqli_error()); // selecting the database 
+
+                   // $res =mysqli_query( $conn, $sql) or die (mysqli_error());
+        
+            }
+        
+?>
