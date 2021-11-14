@@ -1,0 +1,64 @@
+/*
+Author :nithyannad
+Theme :Food oder website 
+version :1.0
+*/
+
+*{
+margin:0;
+padding:0;
+font-family:Arial,Helvetica,sans-serif;
+}
+.wrapper{
+
+/* border: 2px solid rgb(73, 39, 39);
+   */ 
+   padding:1%;
+    width:80%;
+    margin:0 auto;
+}
+
+.text-center{
+    text-align:center;
+}
+
+/* Manu Selection  */
+
+.menu{
+
+    border-bottom: 1px solid gray;
+}
+
+
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 2%;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight:bold;
+    color:#ffa502;
+    }
+
+.menu ul li a:hover{
+    color:#3742fa;
+
+}
+
+/*  css for main-contant*/
+.main-contant{
+    margin:1% 0;
+    background-color: #a4b0be;
+}
+
+/*CSS For Footer*/
+.footer{
+    background-color: #ff4757;
+    color:white;
+
+}
