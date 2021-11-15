@@ -7,6 +7,16 @@
 
 <br>
 
+<?php
+
+if(isset($_SESSION['add']))// checking the add session
+{
+    echo $_SESSION['add']; // dispplay the massage
+    unset($_SESSION['add']); // removing the session massages
+}
+
+?>
+
         <form action="" method="POST">
 
         <table class="tbl-30">
@@ -77,7 +87,22 @@
                 // excuting he query into the data base
                 $res = mysqli_query($conn, $sql) or die(mysqli_error());
 
+                if($res==TRUE)
+                {
+                    //connection sussfully 
+                    $_SESSION['add'] = "Admin Add Succfully";
+                    header("location:".SITEURL.'admin/manage-admin.php');
 
+                   
+                }
+                else
+                {
+                    // not connected 
+                    $_SESSION['add'] = "Failed to Admin";
+                    header("location:".SITEURL.'admin/add-admin.php');
+
+
+                }
             
             }
         

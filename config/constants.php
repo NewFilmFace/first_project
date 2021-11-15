@@ -1,6 +1,11 @@
 <?php 
- // create constanst no repeating the user name connection 
 
+//sasession _start
+    session_start();
+
+
+ // create constanst no repeating the user name connection 
+ define ('SITEURL','http://localhost/food-order-project/');
  define ('LOCALHOST','localhost');
  define ('DB_USERNAME','root');
  define ('DB_PASSWORD','');

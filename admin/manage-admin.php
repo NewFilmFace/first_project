@@ -7,6 +7,17 @@
                <h1> Manage Admin</h1>
 
                 <br>
+
+
+                <?php
+
+                        if(isset($_SESSION['add']))
+                        {
+                            echo $_SESSION['add'];
+                            unset($_SESSION['add']); // removing the session massages
+                        }
+
+                ?>
                 <!-- button admin-->
                 <a href="add-admin.php" class="btn-primary">Add Admin</a>
 
