@@ -35,36 +35,52 @@
 
                         </tr>
 
-                        <tr>
-                            <td>1.</td>
-                            <td>nithyannd</td>
-                            <td>nithy</td>
+                        <?php // display the table valus
+                                $sql = "SELECT  * from tbl_admin";
+                                $res = mysqli_query($conn,$sql);
+                                if($res==TRUE)
+                                {
+                                    //count the code in data base
+                                    $count = mysqli_num_rows($res); // rows in the data bse
+
+                                    $sn=1;
+
+                                    if($count>0)
+
+                                    {
+                                        while($rows=mysqli_fetch_assoc($res))
+                                            {
+                                                $id=$rows['id'];
+                                                $full_name=$rows['full_name'];
+                                                $username=$rows['username'];
+                                            
+                                                    ?>
+                                                      <tr>
+                            <td><?php echo $sn++;?></td>
+                            <td><?php echo $full_name;?></td>
+                            <td><?php echo $username;?></td>
                             <td>
                             <a href="#" class="btn-secondary">update Admin</a>
-                            <a href="#" class="btn-danger">Delete Admin</a>
+                            <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">Delete Admin</a>
                             </td>
 
                         </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>nithyannd</td>
-                            <td>nithy</td>
-                            <td>
-                            <a href="#" class="btn-secondary">update Admin</a>
-                            <a href="#" class="btn-danger">Delete Admin</a>
-                            </td>
 
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>nithyannd</td>
-                            <td>nithy</td>
-                            <td>
-                            <a href="#" class="btn-secondary">update Admin</a>
-                            <a href="#" class="btn-danger">Delete Admin</a>
-                            </td>
+                                                    <?php
 
-                        </tr>
+
+        
+                                            }
+                                    }
+                                    else
+                                    {
+
+                                    }
+                                }
+
+                        ?>
+
+                        
                 </table>
             </div>
             </div>
