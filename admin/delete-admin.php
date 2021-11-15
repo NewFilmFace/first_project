@@ -6,16 +6,20 @@
     $id = $_GET['id'];
 
     $sql = "DELETE From tbl_admin Where id = $id";
-    $res = mysqli_query($conn,$sql);
+    $res = mysqli_query($conn, $sql);
 
 
-    if($res==TRUE)
+     if($res==TRUE)
     {
-        echo "Admin Deleted";
+        $_SESSION['delete'] = "Admin Deleted Successfully";
+        
+        header('location:'.SITEURL.'admin/manage-admin.php');
     }
     else
     {
-            echo " Fail to deleted";
+            $_SESSION['delete'] = "Failed to Delete the admin ,Try again";
+            
+            header('location:'.SITEURL.'admin/manage-admin.php');
     }
 
 ?>
