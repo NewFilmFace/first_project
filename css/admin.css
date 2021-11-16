@@ -113,6 +113,8 @@ table tr td{
     background-color: #3c6382;
 }
 
+
+
 /*  css for main-contant*/
 .main-contant{
     
@@ -128,7 +130,12 @@ table tr td{
     float:left;
 }
 
-
+.success{
+    color:#2ed573;
+}
+.error{
+    color:#eb2f06;
+}
 
 
 /*CSS For Footer*/

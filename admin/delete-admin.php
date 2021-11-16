@@ -11,13 +11,13 @@
 
      if($res==TRUE)
     {
-        $_SESSION['delete'] = "Admin Deleted Successfully";
+        $_SESSION['delete'] = " Admin Deleted Successfully .";
         
         header('location:'.SITEURL.'admin/manage-admin.php');
     }
     else
     {
-            $_SESSION['delete'] = "Failed to Delete the admin ,Try again";
+            $_SESSION['delete'] = " Failed to Delete the admin ,Try again.";
             
             header('location:'.SITEURL.'admin/manage-admin.php');
     }

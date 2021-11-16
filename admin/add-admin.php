@@ -90,7 +90,7 @@ if(isset($_SESSION['add']))// checking the add session
                 if($res==TRUE)
                 {
                     //connection sussfully 
-                    $_SESSION['add'] = "Admin Add Succfully";
+                    $_SESSION['add'] = "Admin Add Succfully.";
                     header("location:".SITEURL.'admin/manage-admin.php');
 
                    
@@ -98,7 +98,7 @@ if(isset($_SESSION['add']))// checking the add session
                 else
                 {
                     // not connected 
-                    $_SESSION['add'] = "Failed to Admin";
+                    $_SESSION['add'] = "Failed to Admin.";
                     header("location:".SITEURL.'admin/add-admin.php');
 
 
